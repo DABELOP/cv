@@ -1,0 +1,124 @@
+h1 {
+	color:white;
+	font-family: tahoma;
+	font-size: 3rem;
+	font-weight: 100;
+	line-height: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+	width: 550px;
+  }
+  
+  h1 span {
+	font-size: 40px;
+	margin-left: 0px;
+  }
+  
+  .message {
+	border-right: 2px white solid;
+	color:white;
+	display: block;
+	font-weight: 900;
+	overflow:hidden;
+	position: absolute;
+	padding-left: 0.5;
+	top: 0.2rem;
+	left:80px;
+	animation: openclose 5s ease-in-out infinite;
+  }
+  
+  .word1, .word2, .word3 {
+	font-family: tahoma;
+	font-size: 3rem;
+	font-weight: 100;
+  }
+  
+  @keyframes openclose {
+	0% {
+	  top: 0.16rem;
+	  width: 0;
+	}
+	5% {
+	  width: 0;
+	}
+	25% {
+	  width: 400px;
+	}
+	45% {
+	  top: 0.16rem;
+	  width: 400px;
+	}
+	55% {
+	  top: 0.16rem;
+	  width: 0;
+	}
+	60% {
+	  top: 0.2rem;
+	  width: 0;
+	}
+	65% {
+	  top: -3.0rem;
+	  
+	}
+	80% {
+	  top: -3.0rem;
+	  width: 170px;
+	}
+	90% {
+	  top: -3.0rem;
+	  width: 170px;
+	}
+	100% {
+	  top: -3.0rem;
+	  width: 0;
+	  text-indent: 0;
+	}
+	
+  }
+  @media (max-width: 992px){
+	
+	@keyframes openclose {
+		0% {
+		  top: 0.16rem;
+		  width: 0;
+		}
+		5% {
+		  width: 0;
+		}
+		25% {
+		  width: 300px;
+		}
+		45% {
+		  top: 0.16rem;
+		  width: 300px;
+		}
+		55% {
+		  top: 0.16rem;
+		  width: 0;
+		}
+		60% {
+		  top: 0.2rem;
+		  width: 0;
+		}
+		65% {
+		  top: -3.0rem;
+		  
+		}
+		80% {
+		  top: -3.0rem;
+		  width: 170px;
+		}
+		90% {
+		  top: -3.0rem;
+		  width: 170px;
+		}
+		100% {
+		  top: -3.0rem;
+		  width: 0;
+		  text-indent: 0;
+		}
+
+
+}
+}

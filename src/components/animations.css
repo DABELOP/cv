@@ -1,0 +1,64 @@
+.profileImg {
+    animation: fadeInR 1.5s ease-out;
+}
+
+.biography {
+    animation: fadeInL 1.5s ease-out;
+}
+
+
+.fixedBanner h2 {
+    animation: enfasis 2s ease-out infinite;
+}
+
+
+.animate img {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s;
+    margin-left: 40px;
+}
+
+.animate {
+    justify-content: space-around;
+}
+
+
+@keyframes enfasis {
+    0% {
+        font-size: 1.7rem;
+    }
+
+    50% {
+        font-size: 2.1rem;
+    }
+
+    100% {
+        font-size: 1.7rem;
+    }
+
+}
+
+@keyframes fadeInR {
+    from {
+        opacity: 0;
+        transform: translateX(100%)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInL {
+    from {
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

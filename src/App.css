@@ -1,38 +1,345 @@
-.App {
-  text-align: center;
+p {
+  font-size: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.linksList {
   display: flex;
-  flex-direction: column;
+  list-style: none;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.navBarLink {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+
+
+.navBarLink:Hover {
+  color: #5eb5c7;
+}
+
+.navContainer {
+  width: 100%;
+  height: 70px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(34, 40, 40, 1) 51%, rgba(0, 0, 0, 1));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.imgLogo {
+  padding: 5px;
+  width: 230px;
+  transition: 0.5s;
+}
+
+.imgLogo:hover{
+  width: 240px;
+}
+
+.profileImg {
+  width: 420px;
+  border-radius: 50%;
+  transition: all 0.8s;
+}
+
+.profileImg:hover {
+  width: 475px;
+}
+
+.mainContainer {
+  height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(34, 40, 40, 1) 51%, rgba(0, 0, 0, 1));
+}
+
+.biography {
+  color: white;
+  margin-right: 100px;
+  width: 35%;
+}
+
+.biography p {
+  margin-top: 15px;
+  color: white;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.biographyButtons p {
+  padding: 8px;
+  border: solid 2px gray;
+  border-radius: 20px;
+  margin-right: 15px;
+  transition: all 0.5s;
+}
+
+.biographyButtons p:hover {
+  background-color: #1C2833;
+  cursor: pointer
+}
+
+.biographyButtons a {
+  text-decoration: none;
+}
+
+.logoCodeLab {
+  width: 400px;
+  margin-right: 70px;
+  margin-left: -300px;
+}
+
+.PersonalDescriptionContainer {
+  justify-content: space-between;
+}
+
+.descriptionName {
+  color: #1A5276
+}
+
+.PersonalDescriptionContainer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: all 2s;
+}
+
+.personalDescription {
+  text-align: justify;
+
+}
+
+.titleDetail {
+  font-weight: bold;
+}
+
+.profileLinks {
+  margin-top: 20px;
+}
+
+.profileLinks a {
+  text-decoration: none;
+  color: #1A5276
+}
+
+.bi-linkedin {
+  font-size: 30px;
+  color: #1A5276;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.bi-linkedin:hover {
+  color: #1C2833;
+  font-size: 35px;
+}
+
+.profileLinks p {
+  padding: 8px;
+  border: solid 1px gray;
+  border-radius: 20px;
+  margin-right: 15px;
+  width: 135px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.profileLinks p:hover {
+  background-color: #1C2833;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.description p,
+.description span {
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.titleH2 {
+  color: #1A5276;
+  margin-left: 15px;
+}
+
+.servicesTitle {
+  margin-top: 100px;
+}
+
+.myServicesContainer {
+  margin-bottom: 50px;
+}
+
+.myServicesContainer p {
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.fixedBanner {
+  width: 100%;
+  height: 300px;
+  background-image: url('./assets/img/backgroundFixed.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.fixedBanner h2 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.fixedBanner a {
+  text-decoration: none;
+}
+
+.fixedBanner p {
+  color: white;
+  font-size: 25px;
+  padding: 8px;
+  border: solid 1px rgb(232, 241, 255);
+  background-color: #1C2833;
+  border-radius: 20px;
+  margin-right: 15px;
+  transition: all 0.5s;
+}
+
+.fixedBanner p:hover {
+  background-color: #4b6986;
+  cursor: pointer
+}
+
+.card {
+  width: 25rem;
+  margin: 15px;
+  transition: all 1s;
+}
+
+.card:hover {
+  transform: translateY(-3%);
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.cardsContainer {
+  margin-top: 30px;
+}
+
+.card-text {
+  font-size: 1.2rem;
+}
+
+
+.contactForm {
+  width: 50%;
+  margin-top: 50px;
+}
+
+.messajeLabel {
+  height: 150px;
+}
+
+.form-control {
+  border: solid black 1px;
+  font-size: 1.2rem;
+}
+
+.form-label {
+  font-size: 1.5rem;
+}
+
+.btn-primary {
+  font-size: 1.5rem;
+  margin-left: 50%;
+  background-color: #1A5276;
+  border: 0px;
+}
+
+.contactContainer {
+  margin-bottom: 50px;
+}
+
+.copyright {
+  color: #b3bbc3;
+  margin: auto;
+}
+
+.PersonalDescriptionContainer {
+  width: 70%;
+  justify-content: center;
+}
+
+.techContainer{
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+@media (max-width: 992px) {
+
+  .profileImg {
+    width: 80%;
+    max-width: 420px;
+    margin-top: 100px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
   }
+
+  .biography {
+    position: relative;
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 100px;
+  }
+
+  .biography h1 {
+    width: 100%;
+  }
+
+  .biography .helloMain {
+    margin-top: 50px;
+  }
+
+  .PersonalDescriptionContainer {
+    flex-direction: column;
+  }
+
+  .homeMessage {
+    max-width: 500px;
+  }
+
+  .logoCodeLab{
+    width: 90%;
+    margin: 0px;
+    margin-bottom: 50px;
+    max-width: 400px;
+  }
+
+
+}
+
+@media (max-width: 660px) {
+.linksList{
+  display:none;
+}
 }
