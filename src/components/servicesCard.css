@@ -30,6 +30,7 @@
     margin-top: 5px;
 }
 
+
 .techCardBack:hover {
     opacity: 0.05;
     -webkit-transition: opacity 500ms;

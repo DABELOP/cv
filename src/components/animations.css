@@ -13,14 +13,30 @@
 
 
 .animate img {
-    opacity: 1;
-    transform: translateX(0%);
-    transition: all 1s;
-    margin-left: 40px;
+    animation: fadeInR 1s ease-out;
 }
+
+.animate .description{
+   animation: fadeInL 1s ease-out;
+  }
 
 .animate {
     justify-content: space-around;
+}
+
+.animateServices .techCard{
+    animation: rotate 0.7s ease-in;
+}
+
+
+@keyframes rotate {
+    from {
+          transform: scale(0.2) rotate(180deg)
+    }
+
+    to {
+          transform: scale(1) rotate(0deg);
+    }
 }
 
 

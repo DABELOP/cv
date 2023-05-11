@@ -31,7 +31,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
+.footerContainer{
+  text-align: center;
+  margin:auto;
 }
 
 .imgLogo {
@@ -85,7 +89,7 @@ p {
 }
 
 .biographyButtons p:hover {
-  background-color: #1C2833;
+  background-color: #4b6986;
   cursor: pointer
 }
 
@@ -96,7 +100,6 @@ p {
 .logoCodeLab {
   width: 400px;
   margin-right: 70px;
-  margin-left: -300px;
 }
 
 .PersonalDescriptionContainer {
@@ -158,6 +161,7 @@ p {
   cursor: pointer;
   color: white;
 }
+
 
 .description p,
 .description span {
@@ -285,6 +289,7 @@ p {
 }
 
 .techContainer{
+  justify-content: space-between;
   max-width: 1000px;
   margin: auto;
 }
@@ -342,4 +347,6 @@ p {
 .linksList{
   display:none;
 }
+
+
 }

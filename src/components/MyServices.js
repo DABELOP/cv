@@ -1,5 +1,6 @@
 import React from 'react'
 import './servicesCard.css'
+import { useRef, useEffect } from 'react'
 
 const services = [
     {
@@ -44,7 +45,39 @@ const services = [
     }
 ]
 
+
 function MyServices() {
+
+    const servicios = useRef(null);
+
+    useEffect(() => {
+        const options = {
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const activarAnimacion = (elemento) => {
+            elemento.classList.add('animateServices');
+        };
+
+        const observer = new IntersectionObserver((entradas, observer) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    activarAnimacion(entrada.target);
+                    observer.unobserve(entrada.target);
+                }
+            });
+        }, options);
+
+        observer.observe(servicios.current);
+
+        return () => {
+            if (servicios.current) {
+                observer.unobserve(servicios.current);
+            }
+        };
+    }, []);
+
     return (
         <div className='myServicesContainer'>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></link>
@@ -54,18 +87,18 @@ function MyServices() {
             </div>
             <p>Aquí te presento un listado de las tecnologías que utilizo para crear sitios web. A continuación,
                 encontrarás una breve descripcion de cada una de ellas. </p>
-            <div className='techContainer d-flex flex-wrap justify-content-center'>
+            <div ref={servicios} className='techContainer d-flex flex-wrap '>
 
-                {services.map((service,i) =>
-                <div className='techCard' key={i+service.name}>
-                    <div className='techCardFront'>
-                        <h4 className='cardTitle'>{service.name}</h4>
-                        <p className='cardDescription'>{service.description}</p>
+                {services.map((service, i) =>
+                    <div className='techCard' key={i + service.name}>
+                        <div className='techCardFront'>
+                            <h4 className='cardTitle'>{service.name}</h4>
+                            <p className='cardDescription'>{service.description}</p>
+                        </div>
+                        <div className='techCardBack d-flex flex-column justify-content-center align-items-center'>
+                            <i className={service.icon}></i>
+                        </div>
                     </div>
-                    <div className='techCardBack d-flex flex-column justify-content-center align-items-center'>
-                        <i className={service.icon}></i>
-                    </div>
-                </div>
                 )}
 
 
