@@ -13,11 +13,11 @@
 
 
 .animate img {
-    animation: fadeInR 1s ease-out;
+    animation: fadeInR 1.5s ease-in-out;
 }
 
 .animate .description{
-   animation: fadeInL 1s ease-out;
+   animation: fadeInL 3s ease-in-out;
   }
 
 .animate {
@@ -56,25 +56,33 @@
 }
 
 @keyframes fadeInR {
-    from {
+    0% {
         opacity: 0;
         transform: translateX(100%)
     }
 
-    to {
-        opacity: 1;
+    50% {
+        opacity: 0.4;
         transform: translateX(0);
+    }
+
+    100%{
+        opacity: 1
     }
 }
 
 @keyframes fadeInL {
-    from {
+    0% {
         opacity: 0;
         transform: translateX(-100%)
     }
 
-    to {
-        opacity: 1;
+    50% {
+        opacity: 0.4;
         transform: translateX(0);
+    }
+
+    100%{
+        opacity: 1;
     }
 }

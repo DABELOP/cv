@@ -10,6 +10,8 @@ import ProjectsCarousel from './components/ProjectsCarousel';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+/* npm run deploy */
+
 function App() {
   return (
     <>
