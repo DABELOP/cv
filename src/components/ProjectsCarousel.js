@@ -2,6 +2,7 @@ import React from 'react'
 import joobbokProject from '../assets/img/joobbokProject.jpg'
 import chatGPTProject from '../assets/img/chatGPTProject.jpg'
 import metatraderProject from '../assets/img/metatraderProject.jpg'
+import pruebaTecnica from '../assets/img/pruebaTecnica.jpg'
 import proximamente from '../assets/img/proximamente.png'
 
 
@@ -42,6 +43,15 @@ function ProjectsCarousel() {
                         <img src={metatraderProject} className="card-img-top" alt="jobbook" />
                         <div className="card-body">
                             <p className="card-text">Asesor experto que permite realizar trading algoritmico en la plataforma Metatrader 4 actualmente funciona en el par EUR-USD y en el indice US30</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div className="card">
+                    <a href='https://dabelop.github.io/pruebaTecnicaProteccion/' target='blank'>
+                        <img src={pruebaTecnica} className="card-img-top" alt="jobbook" />
+                        <div className="card-body">
+                            <p className="card-text">Prueba técnica para desarrollador front-end en react, consumir API de super heroes y listar imagenes, tiempo para realizar la prueba: 2h:40m</p>
                         </div>
                     </a>
                 </div>
